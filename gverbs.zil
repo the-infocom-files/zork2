@@ -2264,7 +2264,7 @@ stumbled into an authentic grue lair!">))
 	 "An interesting idea..."
 	 "What a concept!">>
 
-<GLOBAL DUMMY
+;<GLOBAL DUMMY
 	<LTABLE 0 
 		"Look around."
 	        "Too late for that."
