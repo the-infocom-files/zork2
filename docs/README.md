@@ -12,7 +12,7 @@ Further information on Zork II:
 * [The Infocom Gallery](https://gallery.guetech.org/zork2/zork2.html)
 * [IFWiki](http://www.ifwiki.org/index.php/Zork_II)
 
-The following source material is available for importation. Release 119 was selected from the Zarf Sources.
+The following source material is available for importation. Release 63 was selected from the Zarf Sources.
 
 ## Historical Releases
 
