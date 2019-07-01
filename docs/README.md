@@ -18,19 +18,19 @@ The following source material is available for importation. Release 63 was selec
 
 These contain the available source material.
 
-| Release | Serial | Story File                  | Zarf Sources        | Jason Scott Sources    |
-| -------:|:------:|:---------------------------:|:-------------------:| ---------------------- |
-|      22 | 840518 |  [zork2-mac-r22-s840518.z3] | [zork2-mac-r22.zip] |                        |
-|      48 | 840904 |      [zork2-r48-s840904.z3] |     [zork2-r48.zip] | [zork2-revision-48]    |
-|      63 | 860811 |      [zork2-r63-s860811.z3] |     [zork2-r63.zip] | [zork2-final-revision] |
+| Release | Serial | Story File            | Zarf Sources  | Jason Scott Sources |
+| -------:|:------:|:---------------------:|:-------------:|:-------------------:|
+|      22 | 840518 |  [mac-r22-s840518-z3] | [mac-r22-zip] |                     |
+|      48 | 840904 |      [r48-s840904-z3] |     [r48-zip] |       [revision-48] |
+|      63 | 860811 |      [r63-s860811-z3] |     [r63-zip] |    [final-revision] |
 
-[zork2-mac-r22-s840518.z3]: https://eblong.com/infocom/gamefiles/zork2-mac-r22-s840518.z3
-[zork2-mac-r22.zip]: https://eblong.com/infocom/sources/zork2-mac-r22.zip
+[mac-r22-s840518-z3]: https://eblong.com/infocom/gamefiles/zork2-mac-r22-s840518.z3
+[mac-r22-zip]: https://eblong.com/infocom/sources/zork2-mac-r22.zip
 
-[zork2-r48-s840904.z3]: https://eblong.com/infocom/gamefiles/zork2-r48-s840904.z3
-[zork2-r48.zip]: https://eblong.com/infocom/sources/zork2-r48.zip
-[zork2-revision-48]: https://github.com/historicalsource/zork2/tree/d26f1573576909c6da9a02adc0c9d428c99c873f
+[r48-s840904-z3]: https://eblong.com/infocom/gamefiles/zork2-r48-s840904.z3
+[r48-zip]: https://eblong.com/infocom/sources/zork2-r48.zip
+[revision-48]: https://github.com/historicalsource/zork2/tree/d26f1573576909c6da9a02adc0c9d428c99c873f
 
-[zork2-r63-s860811.z3]: https://eblong.com/infocom/gamefiles/zork2-r63-s860811.z3
-[zork2-r63.zip]: https://eblong.com/infocom/sources/zork2-r63.zip
-[zork2-final-revision]: https://github.com/historicalsource/zork2/tree/e57804a45359004fd95f29cc015481ea124376e6
+[r63-s860811-z3]: https://eblong.com/infocom/gamefiles/zork2-r63-s860811.z3
+[r63-zip]: https://eblong.com/infocom/sources/zork2-r63.zip
+[final-revision]: https://github.com/historicalsource/zork2/tree/e57804a45359004fd95f29cc015481ea124376e6
