@@ -2053,11 +2053,6 @@ quietly swings open to reveal a passageway beyond." CR>
 		      (T
 		       <TELL "It is closed!" CR>)>)>>
 
-<GLOBAL DUMMY
-	<LTABLE "Look around."
-	       "You think it isn't?"
-	       "I think you've already done that.">>
-
 <ROUTINE RIDDLE-PSEUDO ()
 	 <COND (<VERB? EXAMINE>
 		<TELL "Use the \"Look\" command." CR>)>>
