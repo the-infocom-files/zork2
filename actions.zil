@@ -190,14 +190,6 @@ receptacle is fastened to the center of the basket">)>
 			      <TELL
 "You can't control the balloon this way." CR>
 			      <RTRUE>)>)
-		      (<AND <VERB? OPEN>
-			    ,BINF-FLAG
-			    <EQUAL? ,PRSO ,RECEPTACLE>
-			    <FIRST? ,RECEPTACLE>>
-		       <TELL "Opening it reveals a burning "
-			     D ,BINF-FLAG "." CR>
-		       <FSET ,RECEPTACLE ,OPENBIT>
-		       <RTRUE>)
 		      (<AND <VERB? TAKE>
 			    <EQUAL? ,BINF-FLAG ,PRSO>>
 		       <TELL "You don't really want to hold a burning "
@@ -352,6 +344,13 @@ within the basket but cannot be removed." CR>)>>
 	       (<VERB? PUT>
 		<FSET ,PRSO ,NDESCBIT>
 		<RFALSE>)
+	       (<AND <VERB? OPEN>
+		     ,BINF-FLAG
+		     <FIRST? ,RECEPTACLE>>
+		<TELL "Opening it reveals a burning "
+		      D ,BINF-FLAG "." CR>
+		<FSET ,RECEPTACLE ,OPENBIT>
+		<RTRUE>)
 	       (T
 		<BCONTENTS>)>>
 
