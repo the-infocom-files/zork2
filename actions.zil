@@ -203,15 +203,6 @@ receptacle is fastened to the center of the basket">)>
 		       <TELL "You don't really want to hold a burning "
 			     D ,PRSO "." CR>
 		       <RTRUE>)
-		      (<AND <VERB? PUT>
-			    <EQUAL? ,PRSI ,RECEPTACLE>
-			    <FIRST? ,RECEPTACLE>>
-		       <TELL "The receptacle is already occupied." CR>
-		       <RTRUE>)
-		      (<AND <VERB? PUT>
-			    <EQUAL? ,PRSI ,RECEPTACLE>>
-		       <FSET ,PRSO ,NDESCBIT>
-		       <RFALSE>)
 		      (<VERB? INFLATE>
 		       <TELL
 "It takes more than words to inflate a balloon." CR>)>)>>
@@ -352,6 +343,16 @@ be removed.">
 	        <TELL
 "The " D ,PRSO " is part of the basket. It may be manipulated
 within the basket but cannot be removed." CR>)>>
+
+<ROUTINE RECEPTACLE-FCN ()
+	 <COND (<AND <VERB? PUT>
+		     <FIRST? ,RECEPTACLE>>
+		<TELL "The receptacle is already occupied." CR>)
+	       (<VERB? PUT>
+		<FSET ,PRSO ,NDESCBIT>
+		<RFALSE>)
+	       (T
+		<BCONTENTS>)>>
 
 <ROUTINE WIRE-FCN ()
         <COND (<VERB? TAKE FIND EXAMINE>

@@ -2191,7 +2191,7 @@ the like of which is rarely seen outside the Great Underground Empire.")>
 	(ADJECTIVE METAL)
 	(DESC "receptacle")
 	(FLAGS CONTBIT SEARCHBIT NDESCBIT)
-	(ACTION BCONTENTS)
+	(ACTION RECEPTACLE-FCN)
 	(CAPACITY 6)>
 
 <OBJECT ROBOT
