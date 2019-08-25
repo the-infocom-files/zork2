@@ -320,7 +320,8 @@ jagged cliffs of the Flathead Mountains!">)
 		  (T <PUT-BALLOON .R "descends.">)>)>>
 
 <ROUTINE BCONTENTS ()
-	 <COND (<VERB? TAKE>
+	 <COND (<AND <VERB? TAKE>
+		     <EQUAL? ,PRSO ,CLOTH-BAG ,RECEPTACLE ,BRAIDED-WIRE>>
 		<TELL
 "The " D ,PRSO " is an integral part of the basket and cannot
 be removed.">
