@@ -331,7 +331,7 @@ be removed.">
 "The " D ,PRSO " is part of the basket. It may be manipulated
 within the basket but cannot be removed." CR>)>>
 
-<ROUTINE RECEPTACLE-FCN ()
+<ROUTINE RECEPTACLE-FCN ("AUX" RC)
 	 <COND (<AND <VERB? PUT>
 		     <FIRST? ,RECEPTACLE>>
 		<TELL "The receptacle is already occupied." CR>)
@@ -345,6 +345,15 @@ within the basket but cannot be removed." CR>)>>
 		      D ,BINF-FLAG "." CR>
 		<FSET ,RECEPTACLE ,OPENBIT>
 		<RTRUE>)
+	       (<AND <VERB? LOOK-INSIDE>
+		     <FSET? ,RECEPTACLE ,OPENBIT>
+		     <SET RC <FIRST? ,RECEPTACLE>>>
+		<TELL "A " D .RC " is "
+		      <COND (<EQUAL? ,BINF-FLAG .RC>
+			     "burning")
+			    (T
+			     "nestled")>
+		      " inside." CR>)
 	       (T
 		<BCONTENTS>)>>
 
