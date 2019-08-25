@@ -207,8 +207,7 @@ receptacle is fastened to the center of the basket">)>
 	<ENABLE <QUEUE I-BURNUP <* <GETP ,PRSO ,P?SIZE> 20>>>
 	<FSET ,PRSO ,FLAMEBIT>
 	<FSET ,PRSO ,ONBIT>
-	<FCLEAR ,PRSO ,TAKEBIT>
-	<FCLEAR ,PRSO ,READBIT>
+	<FSET ,PRSO ,TRYTAKEBIT>
 	<COND (,BINF-FLAG <RTRUE>)
 	      (T
 	       <TELL
