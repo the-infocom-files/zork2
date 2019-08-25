@@ -190,11 +190,6 @@ receptacle is fastened to the center of the basket">)>
 			      <TELL
 "You can't control the balloon this way." CR>
 			      <RTRUE>)>)
-		      (<AND <VERB? TAKE>
-			    <EQUAL? ,BINF-FLAG ,PRSO>>
-		       <TELL "You don't really want to hold a burning "
-			     D ,PRSO "." CR>
-		       <RTRUE>)
 		      (<VERB? INFLATE>
 		       <TELL
 "It takes more than words to inflate a balloon." CR>)>)>>
@@ -353,6 +348,11 @@ within the basket but cannot be removed." CR>)>>
 		<RTRUE>)
 	       (T
 		<BCONTENTS>)>>
+
+<ROUTINE RECEPTACLE-CONT ()
+	 <COND (<EQUAL? ,BINF-FLAG ,PRSO>
+		<TELL "You don't really want to hold a burning "
+		      D ,PRSO "." CR>)>>
 
 <ROUTINE WIRE-FCN ()
         <COND (<VERB? TAKE FIND EXAMINE>

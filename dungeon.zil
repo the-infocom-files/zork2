@@ -2192,6 +2192,7 @@ the like of which is rarely seen outside the Great Underground Empire.")>
 	(DESC "receptacle")
 	(FLAGS CONTBIT SEARCHBIT NDESCBIT)
 	(ACTION RECEPTACLE-FCN)
+	(CONTFCN RECEPTACLE-CONT)
 	(CAPACITY 6)>
 
 <OBJECT ROBOT
