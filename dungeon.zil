@@ -1209,7 +1209,7 @@ the east is fitful light.")
 	(SYNONYM PALANTIR SPHERE)
 	(ADJECTIVE CRYSTAL WHITE CLEAR)
 	(DESC "clear crystal sphere")
-	(LDESC "There is a clear crystal sphere lying in the sand.")
+	(FDESC "There is a clear crystal sphere lying in the sand.")
 	(FLAGS STAGGERED TAKEBIT NDESCBIT TRANSBIT)
 	(ACTION PALANTIR)
 	(VALUE 20)>
@@ -1219,7 +1219,7 @@ the east is fitful light.")
 	(SYNONYM SERPENT SNAKE)
 	(ADJECTIVE BABY SEA)
 	(DESC "baby sea serpent")
-	(LDESC "There is a baby sea serpent swimming in the aquarium.")
+	(FDESC "There is a baby sea serpent swimming in the aquarium.")
 	(FLAGS ACTORBIT)
 	(ACTION SERPENT-FCN)>
 
