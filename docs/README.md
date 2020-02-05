@@ -59,8 +59,6 @@ Zarf's Obsessively Complete Infocom Catalog holds a copy of the game file for th
 [zork2-r63.zip]: https://eblong.com/infocom/sources/zork2-r63.zip
 [final revision]: https://github.com/historicalsource/zork2/tree/e57804a45359004fd95f29cc015481ea124376e6
 
-The following source material is available for importation. Release 63 was selected from the Zarf Sources.
-
 ## Future Development
 
 Release 63 has been selected as the starting point for future development.
