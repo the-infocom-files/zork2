@@ -37,6 +37,7 @@ Zarf's Obsessively Complete Infocom Catalog holds copies of the game files for e
 [zork2-r18-s820517.z3]: https://eblong.com/infocom/gamefiles/zork2-r18-s820517.z3
 [zork2-r19-s820721.z3]: https://eblong.com/infocom/gamefiles/zork2-r19-s820721.z3
 [zork2-r22-s830331.z3]: https://eblong.com/infocom/gamefiles/zork2-r22-s830331.z3
+[zork2-r23-s830411.z3]: https://eblong.com/infocom/gamefiles/zork2-r23-s830411.z3
 
 [zork2-mac-r22-s840518.z3]: https://eblong.com/infocom/gamefiles/zork2-mac-r22-s840518.z3
 [zork2-mac-r22.zip]: https://eblong.com/infocom/sources/zork2-mac-r22.zip
