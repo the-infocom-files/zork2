@@ -13,6 +13,11 @@ The following sources provide further information on Zork II:
 * [IFWiki](http://www.ifwiki.org/index.php/Zork_II)
 * [Zork II Specifications](http://www.infocom-if.org/games/zork2/zork2specs.html)
 
+## Resources
+
+* [Zork II on The Obsessively Complete Infocom Catalog](https://eblong.com/infocom/#zork2)
+* [Zork II on Historical Source (GitHub)](https://github.com/historicalsource/zork2)
+
 ## Public Release History
 
 Zarf's Obsessively Complete Infocom Catalog holds copies of the game files for every public release of Zork II. It also holds the source files for the last two public releases. The source files for the final public release are the same as the revision 48 sources in the matching Historical Source repository.
