@@ -20,10 +20,8 @@ The following sources provide further information on Zork II:
 
 ## Version History
 
-Zarf's Obsessively Complete Infocom Catalog holds copies of the game files for every existing version of Zork II listed in the Infocom Fact Sheet. It also holds the source files for versions 22/840518, 48/840904 and 63/860811.
-
 | Release | Serial | Type | Story File                 | Obsessive Sources   | Historical Sources |
-| -------:|:------:|:----::---------------------------:|:-------------------:|:------------------:|
+| -------:|:------:|:----:|:--------------------------:|:-------------------:|:------------------:|
 |       7 | UG3AU5 |  PUB |      [zork2-r7-sUG3AU5.z2] |                   - |                  - |
 |      15 | 820308 |  PUB |     [zork2-r15-s820308.z3] |                   - |                  - |
 |      17 | 820427 |  PUB |     [zork2-r17-s820427.z3] |                   - |                  - |
