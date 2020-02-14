@@ -20,21 +20,19 @@ The following sources provide further information on Zork II:
 
 ## Version History
 
-Zarf's Obsessively Complete Infocom Catalog holds copies of the game files for every existing version of Zork II listed in the Infocom Fact Sheet. It also holds the source files for versions 22/840518, 48/840904 and 63/860811.
-
-| Release | Serial | Story File                  | Zarf Sources        | Historical Sources |
-| -------:|:------:|:---------------------------:|:-------------------:|:------------------:|
-|       7 | UG3AU5 |       [zork2-r7-sUG3AU5.z2] |                   - |                  - |
-|      15 | 820308 |      [zork2-r15-s820308.z3] |                   - |                  - |
-|      17 | 820427 |      [zork2-r17-s820427.z3] |                   - |                  - |
-|      18 | 820512 |      [zork2-r18-s820512.z3] |                   - |                  - |
-|      18 | 820517 |      [zork2-r18-s820517.z3] |                   - |                  - |
-|      19 | 820721 |      [zork2-r19-s820721.z3] |                   - |                  - |
-|      22 | 830331 |      [zork2-r22-s830331.z3] |                   - |                  - |
-|      23 | 830411 |      [zork2-r23-s830411.z3] |                   - |                  - |
-|      22 | 840518 |  [zork2-mac-r22-s840518.z3] | [zork2-mac-r22.zip] |                  - |
-|      48 | 840904 |      [zork2-r48-s840904.z3] |     [zork2-r48.zip] |      [revision 48] |
-|      63 | 860811 |      [zork2-r63-s860811.z3] |     [zork2-r63.zip] |   [final revision] |
+| Release | Serial | Type | Story File                 | Obsessive Sources   | Historical Sources |
+| -------:|:------:|:----::---------------------------:|:-------------------:|:------------------:|
+|       7 | UG3AU5 |  PUB |      [zork2-r7-sUG3AU5.z2] |                   - |                  - |
+|      15 | 820308 |  PUB |     [zork2-r15-s820308.z3] |                   - |                  - |
+|      17 | 820427 |  PUB |     [zork2-r17-s820427.z3] |                   - |                  - |
+|      18 | 820512 |  PUB |     [zork2-r18-s820512.z3] |                   - |                  - |
+|      18 | 820517 |  PUB |     [zork2-r18-s820517.z3] |                   - |                  - |
+|      19 | 820721 |  PUB |     [zork2-r19-s820721.z3] |                   - |                  - |
+|      22 | 830331 |  PUB |     [zork2-r22-s830331.z3] |                   - |                  - |
+|      23 | 830411 |  PUB |     [zork2-r23-s830411.z3] |                   - |                  - |
+|      22 | 840518 |  PUB | [zork2-mac-r22-s840518.z3] | [zork2-mac-r22.zip] |                  - |
+|      48 | 840904 |  PUB |     [zork2-r48-s840904.z3] |     [zork2-r48.zip] |      [revision 48] |
+|      63 | 860811 |  FIN |     [zork2-r63-s860811.z3] |     [zork2-r63.zip] |   [final revision] |
 
 [zork2-r7-sUG3AU5.z2]: https://eblong.com/infocom/gamefiles/zork2-r7-sUG3AU5.z2
 [zork2-r15-s820308.z3]: https://eblong.com/infocom/gamefiles/zork2-r15-s820308.z3
