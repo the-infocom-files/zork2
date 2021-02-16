@@ -190,28 +190,6 @@ receptacle is fastened to the center of the basket">)>
 			      <TELL
 "You can't control the balloon this way." CR>
 			      <RTRUE>)>)
-		      (<AND <VERB? OPEN>
-			    ,BINF-FLAG
-			    <EQUAL? ,PRSO ,RECEPTACLE>
-			    <FIRST? ,RECEPTACLE>>
-		       <TELL "Opening it reveals a burning "
-			     D ,BINF-FLAG "." CR>
-		       <FSET ,RECEPTACLE ,OPENBIT>
-		       <RTRUE>)
-		      (<AND <VERB? TAKE>
-			    <EQUAL? ,BINF-FLAG ,PRSO>>
-		       <TELL "You don't really want to hold a burning "
-			     D ,PRSO "." CR>
-		       <RTRUE>)
-		      (<AND <VERB? PUT>
-			    <EQUAL? ,PRSI ,RECEPTACLE>
-			    <FIRST? ,RECEPTACLE>>
-		       <TELL "The receptacle is already occupied." CR>
-		       <RTRUE>)
-		      (<AND <VERB? PUT>
-			    <EQUAL? ,PRSI ,RECEPTACLE>>
-		       <FSET ,PRSO ,NDESCBIT>
-		       <RFALSE>)
 		      (<VERB? INFLATE>
 		       <TELL
 "It takes more than words to inflate a balloon." CR>)>)>>
@@ -229,8 +207,7 @@ receptacle is fastened to the center of the basket">)>
 	<ENABLE <QUEUE I-BURNUP <* <GETP ,PRSO ,P?SIZE> 20>>>
 	<FSET ,PRSO ,FLAMEBIT>
 	<FSET ,PRSO ,ONBIT>
-	<FCLEAR ,PRSO ,TAKEBIT>
-	<FCLEAR ,PRSO ,READBIT>
+	<FSET ,PRSO ,TRYTAKEBIT>
 	<COND (,BINF-FLAG <RTRUE>)
 	      (T
 	       <TELL
@@ -329,7 +306,8 @@ jagged cliffs of the Flathead Mountains!">)
 		  (T <PUT-BALLOON .R "descends.">)>)>>
 
 <ROUTINE BCONTENTS ()
-	 <COND (<VERB? TAKE>
+	 <COND (<AND <VERB? TAKE>
+		     <EQUAL? ,PRSO ,CLOTH-BAG ,RECEPTACLE ,BRAIDED-WIRE>>
 		<TELL
 "The " D ,PRSO " is an integral part of the basket and cannot
 be removed.">
@@ -352,6 +330,37 @@ be removed.">
 	        <TELL
 "The " D ,PRSO " is part of the basket. It may be manipulated
 within the basket but cannot be removed." CR>)>>
+
+<ROUTINE RECEPTACLE-FCN ("AUX" RC)
+	 <COND (<AND <VERB? PUT>
+		     <FIRST? ,RECEPTACLE>>
+		<TELL "The receptacle is already occupied." CR>)
+	       (<VERB? PUT>
+		<FSET ,PRSO ,NDESCBIT>
+		<RFALSE>)
+	       (<AND <VERB? OPEN>
+		     ,BINF-FLAG
+		     <FIRST? ,RECEPTACLE>>
+		<TELL "Opening it reveals a burning "
+		      D ,BINF-FLAG "." CR>
+		<FSET ,RECEPTACLE ,OPENBIT>
+		<RTRUE>)
+	       (<AND <VERB? LOOK-INSIDE>
+		     <FSET? ,RECEPTACLE ,OPENBIT>
+		     <SET RC <FIRST? ,RECEPTACLE>>>
+		<TELL "A " D .RC " is "
+		      <COND (<EQUAL? ,BINF-FLAG .RC>
+			     "burning")
+			    (T
+			     "nestled")>
+		      " inside." CR>)
+	       (T
+		<BCONTENTS>)>>
+
+<ROUTINE RECEPTACLE-CONT ()
+	 <COND (<EQUAL? ,BINF-FLAG ,PRSO>
+		<TELL "You don't really want to hold a burning "
+		      D ,PRSO "." CR>)>>
 
 <ROUTINE WIRE-FCN ()
         <COND (<VERB? TAKE FIND EXAMINE>
