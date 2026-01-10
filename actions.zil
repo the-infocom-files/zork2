@@ -1850,10 +1850,13 @@ a distant room, which can be described clearly...." CR CR>)>
 	
 <ROUTINE PKEY-FCN ()
     <COND (<VERB? TURN>
-	   <COND (,PUNLOCK-FLAG
-		  <PERFORM ,V?LOCK ,PDOOR ,PRSO>)
+	   <COND (<EQUAL? <LOC ,KEY> ,KEYHOLE-1 ,KEYHOLE-2>
+		  <COND (,PUNLOCK-FLAG
+			 <PERFORM ,V?LOCK ,PDOOR ,PRSO>)
+			(T
+			 <PERFORM ,V?UNLOCK ,PDOOR ,PRSO>)>)
 		 (T
-		  <PERFORM ,V?UNLOCK ,PDOOR ,PRSO>)>)>>
+		  <PERFORM ,V?RUB ,PRSO>)>)>>
 		
 <ROUTINE PLACE-MAT-FCN ()
     <COND (<VERB? PUT-UNDER>
