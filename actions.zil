@@ -1686,10 +1686,7 @@ dust rises from beneath it." CR>
 	       (<VERB? EXAMINE>
 		<TELL
 "There is something misty in the sphere. Perhaps if you were to look
-into it..." CR>)
-	       (<AND <VERB? TAKE> <==? ,PRSO ,PALANTIR-3>>
-		<PUTP ,PRSO ,P?LDESC <>>
-		<RFALSE>)>>
+into it..." CR>)>>
 
 <ROUTINE DEAD-PALANTIR (RARG "AUX" P)
 	 <COND (<EQUAL? .RARG ,M-LOOK>
